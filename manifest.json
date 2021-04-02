@@ -2,7 +2,7 @@
   "manifest_version": 2,
   "name": "AideShow",
   "description": "Abre anexos do ServiceAide em uma nova aba.",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "author": "Victor Oliveira",
 
   "icons": {
