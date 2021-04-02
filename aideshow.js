@@ -4,6 +4,10 @@
   Victor Oliveira <victor.oliveira@gmx.com>
 
   Changelog:
+  02/04/2021 01:35 - v1.0.2
+  - Função de abertura de aba modificada para
+    compartilhar código com o Firefox
+
   02/04/2021 00:32 - v1.0.1
   - Corrigido o problema de download duplicado
   - Melhorias de performance
@@ -24,8 +28,8 @@ chrome.webRequest.onHeadersReceived.addListener(
 		// console.log(details)
 
   	if (details.type == 'sub_frame') {
-	    window.open(details.url)
-	    return {redirectUrl: 'javascript:void(0)'} // Fix para download duplicado
+	    chrome.tabs.create({url: details.url}) // v1.0.2
+	    return {redirectUrl: 'javascript:void(0)'} // v1.0.1
   	}
   
     return { responseHeaders: details.responseHeaders }
