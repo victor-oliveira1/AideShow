@@ -1,5 +1,5 @@
 /* 
-  AideShow v1.0.1
+  AideShow v1.0.2
   Abre anexos do ServiceAide em uma nova aba.
   Victor Oliveira <victor.oliveira@gmx.com>
 
